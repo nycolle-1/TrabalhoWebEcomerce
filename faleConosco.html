@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+<link rel="stylesheet" href="styleGeral.css">
+      <!-- bliboteca de icons -->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>  
+</head>
+
+<style>
+    .titulo{
+    padding: 100px 9% 30px;
+}
+
+.titulo h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+button, input, textarea{
+    border-radius: 5px;
+}
+
+.formulario{
+    
+      padding: 0px 9% 30px;
+      font-size: 1em;
+      justify-content: center;
+      margin-bottom: 1em;
+}
+
+.formulario label{
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+.formulario input[type="text"],.formulario input[type="email"],.formulario textarea{
+    padding: 0.3em;
+    border: 1px solid #8ab3e8;
+
+    box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+
+fieldset{
+    border: 0;
+}
+
+button{
+    font-size: 1.2em;
+    margin: 1em;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.1);
+    text-shadow:  1px 1px 1px  rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 90%;
+    left: 50;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+</style>
+<body>
+    
+   <header>
+            <!-- cabeçado-->
+         <!-- topo/cabeçalho-->
+    <nav>
+        <a href="index.html" class="logo"> Ecommerce.</a>
+
+        <a href="compras.html" class="card-icon">
+            <!-- link do icon-->
+            <i class="ri-shopping-bag-line"></i> 
+            <span class="cart-item-count"></span>
+
+        </a>
+          
+    </nav>
+
+      </header>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+    <div class="titulo">
+        <h1>Fale Conosco</h1>
+        <p>Em caso de quaisquer dúvidas ou problemas, entre em contato conosco enviando um e-mail por aqui </p>
+    </div>
+
+<!--formlario--------------------------------------------------------------------------------------------------->
+  <div class="formulario">
+<form>
+       
+        <fieldset>
+            <div>
+                <label> Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            
+            <div>
+                <label> Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+       <!----------------------------------------------------------------------------------------------------->
+ 
+        <div>
+            <label> Email</label>
+                <input type="email" name="email" id="email" required>
+        </div>
+        
+        <!----------------------------------------------------------------------------------------------------->
+        
+        <div>
+            <label> Seleciona o motivo do contato</label>
+                <label >
+                    <input type="radio" name="motivo" value="reclamacao">Reclamação
+                </label>
+                 <label >
+                    <input type="radio" name="motivo" value="sujestao">Sujestão
+                </label>
+                 <label >
+                    <input type="radio" name="motivo" value="duvida">Dúvida
+                </label>
+                 <label >
+                    <input type="radio" name="motivo" value="outros">Outros
+                </label>
+        </div>
+     
+        <!----------------------------------------------------------------------------------------------------->
+        
+        <div>
+            <br>
+            <label > Mensagem</label>
+            <textarea row= "10 " style="width: 50em;" id="mensagem" name ="mensagem" required></textarea>
+        </div>
+       
+        <!----------------------------------------------------------------------------------------------------->
+
+        <button type="submit">Enviar </button>
+    </form>
+</div>
+</body>
+</html>
